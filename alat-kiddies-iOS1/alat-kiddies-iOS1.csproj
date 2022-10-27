@@ -69,6 +69,15 @@
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+      <PackageReference Include="BlazorAnimation">
+        <Version>2.1.0</Version>
+      </PackageReference>
+      <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator.IOS">
+        <Version>20.3.0.50</Version>
+      </PackageReference>
+      <PackageReference Include="Xamarin.iOS.DGActivityIndicatorView">
+        <Version>1.0.1</Version>
+      </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -113,6 +122,49 @@
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
             <Visible>false</Visible>
         </ImageAsset>
+        <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\landInPage.imageset\landInPage%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\landInPage.imageset\landInPage%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\landInPage.imageset\landInPage.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\landInPage.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-loader-logo.cc151da8.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-loader-logo.cc151da8.imageset\alat-loader-logo.cc151da8%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-loader-logo.cc151da8.imageset\alat-loader-logo.cc151da8.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-loader-logo.cc151da8.imageset\alat-loader-logo.cc151da8%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\dashboardBckgrnd.imageset\dashboardBckgrnd%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\dashboardBckgrnd.imageset\dashboardBckgrnd%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\dashboardBckgrnd.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\dashboardBckgrnd.imageset\dashboardBckgrnd.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-logo.imageset\alat-logo.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-logo.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-logo.imageset\alat-logo%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat-logo.imageset\alat-logo%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\signUPIcon.imageset\signUPIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\signUPIcon.imageset\signUPIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\signUPIcon.imageset\signUPIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\signUPIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader.imageset\spinningLoader.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader1.imageset\spinningLoader1.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader1.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader.imageset\spinningLoader%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader.imageset\spinningLoader%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader1.imageset\spinningLoader1%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningLoader1.imageset\spinningLoader1%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat_loading.imageset\alat_loading.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat_loading.imageset\alat_loading%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat_loading.imageset\alat_loading%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\alat_loading.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\showIcon.imageset\showIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\showIcon.imageset\showIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\showIcon.imageset\showIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\showIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\hideIcon.imageset\hideIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\hideIcon.imageset\hideIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\hideIcon.imageset\hideIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\hideIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningIndicator.imageset\spinningIndicator.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\spinningIndicator.imageset\Contents.json" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
@@ -133,6 +185,11 @@
         <Compile Include="ViewController.designer.cs">
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
+        <Compile Include="LoginScreenVC.cs" />
+        <Compile Include="LoginScreenVC.designer.cs">
+          <DependentUpon>LoginScreenVC.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Utility Class.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

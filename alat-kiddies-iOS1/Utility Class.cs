@@ -1,10 +1,65 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+
 namespace alat_kiddies_iOS1
 {
-    public class Utility_Class
+
+    static class ValidationPack
     {
-        public Utility_Class()
+        public static bool ValidateEmail(string email)
         {
+            bool emailInValid;
+            if ((!Regex.Match(email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$").Success) & email.Length >= 30)
+            {
+                emailInValid = true;
+            }
+            else if (!(Regex.Match(email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$").Success))
+            {
+                emailInValid = true;
+            }
+            else if (email.Length >= 30)
+            {
+                emailInValid = true;
+            }
+            else
+            {
+                emailInValid = false;
+
+            }
+
+
+
+            return emailInValid;
+        }
+
+        public static bool ValidateName(string name)
+        {
+            bool isNameWrong;
+            if (!(Regex.Match(name, "^[A-Z][a-z]*$").Success))
+            {
+                isNameWrong = true;
+            }
+            else
+            {
+                isNameWrong = false;
+            }
+
+            return isNameWrong;
+        }
+
+        public static bool ValidatePassWord(string password)
+        {
+            bool isPasswordWrong;
+            if (!Regex.Match(password, "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*_-]).{8,}$").Success)
+            {
+                isPasswordWrong = true;
+            }
+            else
+            {
+                isPasswordWrong = false;
+            }
+
+            return isPasswordWrong;
         }
     }
 }

@@ -12,9 +12,39 @@ namespace alat_kiddies_iOS1
 	[Register ("GuardianTxHistoryVC")]
 	partial class GuardianTxHistoryVC
 	{
+		[Outlet]
+		UIKit.UIImageView alatLoadingImg { get; set; }
+
+		[Outlet]
+		UIKit.UIView loadingTxHistoryView { get; set; }
+
+		[Outlet]
+		UIKit.UITableView parentTxHistoryTable { get; set; }
+
+		[Outlet]
+		UIKit.UIImageView spinningIndicatorImg { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (alatLoadingImg != null) {
+				alatLoadingImg.Dispose ();
+				alatLoadingImg = null;
+			}
+
+			if (loadingTxHistoryView != null) {
+				loadingTxHistoryView.Dispose ();
+				loadingTxHistoryView = null;
+			}
+
+			if (spinningIndicatorImg != null) {
+				spinningIndicatorImg.Dispose ();
+				spinningIndicatorImg = null;
+			}
+
+			if (parentTxHistoryTable != null) {
+				parentTxHistoryTable.Dispose ();
+				parentTxHistoryTable = null;
+			}
 		}
 	}
 }

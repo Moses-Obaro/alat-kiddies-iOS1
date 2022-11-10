@@ -12,9 +12,15 @@ namespace alat_kiddies_iOS1
 	[Register ("WardTxHistoryVC")]
 	partial class WardTxHistoryVC
 	{
+		[Outlet]
+		UIKit.UITableView wardTxHistoryTableView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (wardTxHistoryTableView != null) {
+				wardTxHistoryTableView.Dispose ();
+				wardTxHistoryTableView = null;
+			}
 		}
 	}
 }

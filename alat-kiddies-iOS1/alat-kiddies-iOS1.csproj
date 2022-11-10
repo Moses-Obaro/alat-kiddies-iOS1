@@ -68,13 +68,7 @@
         <Reference Include="System.Numerics.Vectors" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-      <PackageReference Include="BlazorAnimation">
-        <Version>2.1.0</Version>
-      </PackageReference>
-      <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator.IOS">
-        <Version>20.3.0.50</Version>
-      </PackageReference>
+      <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
       <PackageReference Include="Xamarin.iOS.DGActivityIndicatorView">
         <Version>1.0.1</Version>
       </PackageReference>
@@ -165,13 +159,104 @@
         <ImageAsset Include="Resources\Assets.xcassets\hideIcon.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\spinningIndicator.imageset\spinningIndicator.png" />
         <ImageAsset Include="Resources\Assets.xcassets\spinningIndicator.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\TxHistoryImgDashboardPg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\TxHistoryImgDashboardPg.imageset\TxHistoryImgDashboardPg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\ProfilePicAvatarMale.imageset\ProfilePicAvatarMale.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\ProfilePicAvatarMale.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AcctDetailsBgDashboardPg.imageset\AcctDetailsBgDashboardPg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\AcctDetailsBgDashboardPg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AirtimePurchaseImgDashboardPg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AirtimePurchaseImgDashboardPg.imageset\AirtimePurchaseImgDashboardPg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\ProfilePicAvatarFemale.imageset\ProfilePicAvatarFemale.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\ProfilePicAvatarFemale.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AcctStatementImgDashboardPg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AcctStatementImgDashboardPg.imageset\AcctStatementImgDashboardPg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\EyeCloseImg.imageset\EyeCloseImg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\EyeCloseImg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\SpaceManImg.imageset\SpaceManImg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\SpaceManImg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\BackBtnImg.imageset\BackBtnImg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\BackBtnImg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\EyeOpenImg.imageset\EyeOpenImg.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\EyeOpenImg.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\hide.imageset\hide%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\hide.imageset\hide%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\hide.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\hide.imageset\hide.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\show.imageset\show.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\show.imageset\show%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\show.imageset\show%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\show.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\sendMoneyIcon.imageset\sendMoneyIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\sendMoneyIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\createAccountIcon.imageset\createAccountIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\createAccountIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\airtimeAndDataIcon.imageset\airtimeAndDataIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\airtimeAndDataIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\rkaIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\rkaIcon.imageset\rkaIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\royalKiddiesIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\royalKiddiesIcon.imageset\royalKiddiesIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\emailIcon.imageset\emailIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\emailIcon.imageset\emailIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\emailIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\emailIcon.imageset\emailIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\passwordIcon.imageset\passwordIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\passwordIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\passwordIcon.imageset\passwordIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\passwordIcon.imageset\passwordIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\bottomIcon.imageset\bottomIcon.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\bottomIcon.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\bottomIcon.imageset\bottomIcon%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\bottomIcon.imageset\bottomIcon%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage3.imageset\loginPageImage3.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage3.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage2.imageset\loginPageImage2.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage2.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage1.imageset\loginPageImage1.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\caraouselImage1.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Kiddies Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Kiddies Image.imageset\Royal Kiddies Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Kiddies Image.imageset\Royal Kiddies Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Kiddies Image.imageset\Royal Kiddies Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Send Money Image.imageset\Send Money Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Send Money Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Send Money Image.imageset\Send Money Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Send Money Image.imageset\Send Money Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Create Account Image.imageset\Create Account Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Create Account Image.imageset\Create Account Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Create Account Image.imageset\Create Account Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Create Account Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Airtime Image.imageset\Airtime Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Airtime Image.imageset\Airtime Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Airtime Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Airtime Image.imageset\Airtime Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Dom Account Image.imageset\Dom Account Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Dom Account Image.imageset\Dom Account Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Dom Account Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Dom Account Image.imageset\Dom Account Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Joint Acc Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Joint Acc Image.imageset\Joint Acc Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Joint Acc Image.imageset\Joint Acc Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Joint Acc Image.imageset\Joint Acc Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Acc Image.imageset\Royal Acc Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Acc Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Acc Image.imageset\Royal Acc Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Royal Acc Image.imageset\Royal Acc Image%403x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Curr Account Image.imageset\Curr Account Image.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Curr Account Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Curr Account Image.imageset\Curr Account Image%402x.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Curr Account Image.imageset\Curr Account Image%403x.png" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
+        <Folder Include="Models\" />
+        <Folder Include="Kiddies\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
+        <InterfaceDefinition Include="Kiddies\KiddiesStoryboard.storyboard" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -190,6 +275,37 @@
           <DependentUpon>LoginScreenVC.cs</DependentUpon>
         </Compile>
         <Compile Include="Utility Class.cs" />
+        <Compile Include="ParentsDashBoardVC.cs" />
+        <Compile Include="ParentsDashBoardVC.designer.cs">
+          <DependentUpon>ParentsDashBoardVC.cs</DependentUpon>
+        </Compile>
+        <Compile Include="WardDashBoardVC.cs" />
+        <Compile Include="WardDashBoardVC.designer.cs">
+          <DependentUpon>WardDashBoardVC.cs</DependentUpon>
+        </Compile>
+        <Compile Include="GuardianTxHistoryVC.cs" />
+        <Compile Include="GuardianTxHistoryVC.designer.cs">
+          <DependentUpon>GuardianTxHistoryVC.cs</DependentUpon>
+        </Compile>
+        <Compile Include="WardTxHistoryVC.cs" />
+        <Compile Include="WardTxHistoryVC.designer.cs">
+          <DependentUpon>WardTxHistoryVC.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Models\ParentTransactions.cs" />
+        <Compile Include="Models\WardTransactions.cs" />
+        <Compile Include="ParentTransactionSource.cs" />
+        <Compile Include="ParentTxHistoryCell.cs" />
+        <Compile Include="ParentTxHistoryCell.designer.cs">
+          <DependentUpon>ParentTxHistoryCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="WardTxHistoryCell.cs" />
+        <Compile Include="WardTxHistoryCell.designer.cs">
+          <DependentUpon>WardTxHistoryCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="TransactionTableCell.cs" />
+        <Compile Include="TransactionTableCell.designer.cs">
+          <DependentUpon>TransactionTableCell.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

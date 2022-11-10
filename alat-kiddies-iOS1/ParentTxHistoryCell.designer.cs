@@ -12,9 +12,39 @@ namespace alat_kiddies_iOS1
 	[Register ("ParentTxHistoryCell")]
 	partial class ParentTxHistoryCell
 	{
+		[Outlet]
+		UIKit.UILabel txAmountLbl { get; set; }
+
+		[Outlet]
+		UIKit.UILabel txDateLbl { get; set; }
+
+		[Outlet]
+		UIKit.UILabel txRecipientLbl { get; set; }
+
+		[Outlet]
+		UIKit.UILabel txTypeLbl { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (txDateLbl != null) {
+				txDateLbl.Dispose ();
+				txDateLbl = null;
+			}
+
+			if (txTypeLbl != null) {
+				txTypeLbl.Dispose ();
+				txTypeLbl = null;
+			}
+
+			if (txAmountLbl != null) {
+				txAmountLbl.Dispose ();
+				txAmountLbl = null;
+			}
+
+			if (txRecipientLbl != null) {
+				txRecipientLbl.Dispose ();
+				txRecipientLbl = null;
+			}
 		}
 	}
 }

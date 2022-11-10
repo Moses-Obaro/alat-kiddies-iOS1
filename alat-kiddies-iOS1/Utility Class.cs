@@ -49,17 +49,17 @@ namespace alat_kiddies_iOS1
 
         public static bool ValidatePassWord(string password)
         {
-            bool isPasswordWrong;
-            if (!Regex.Match(password, "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*_-]).{8,}$").Success)
+            bool isPasswordValid;
+            if (!Regex.Match(password, "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[.#?!@$%^&*_-]).{8,}$").Success)
             {
-                isPasswordWrong = true;
+                isPasswordValid = true;
             }
             else
             {
-                isPasswordWrong = false;
+                isPasswordValid = false;
             }
 
-            return isPasswordWrong;
+            return isPasswordValid;
         }
     }
 }

@@ -12,5 +12,38 @@ namespace alat_kiddies_iOS1
 		public ParentTxHistoryCell (IntPtr handle) : base (handle)
 		{
 		}
+
+		public ParentTxHistoryCell()
+		{
+
+		}
+
+		public void PopulateCell(decimal amount, string recipientAccount, string date, string type)
+		{
+			txAmountLbl.Text = "₦" + String.Format("{0:n}", amount);
+			txRecipientLbl.Text = recipientAccount;
+			txDateLbl.Text = date;
+			txTypeLbl.Text = type;
+			if (type == "Credit")
+            {
+				txTypeLbl.TextColor = UIColor.Green;
+            }
+
+			if (type == "Debit")
+            {
+				txTypeLbl.TextColor = UIColor.Red;
+            }
+		}
+
+		//public override void PrepareForReuse()
+		//{
+		//	base.PrepareForReuse();
+
+		//	txAmountLbl.Text = null;
+		//	txDateLbl.Text = null;
+		//	txRecipientLbl.Text = null;
+		//	txTypeLbl.Text = null;
+
+		//}
 	}
 }

@@ -12,5 +12,24 @@ namespace alat_kiddies_iOS1
 		public TransactionTableCell (IntPtr handle) : base (handle)
 		{
 		}
+
+		public TransactionTableCell()
+        {
+
+        }
+
+		public void PopulateCell(ParentTransaction transaction)
+        {
+			transactionAmountLbl.Text = "₦" + transaction.transactionAmount;
+			transactionDateLbl.Text = transaction.transactionDate;
+			transactionRecipientLbl.Text = transaction.transactionRecipientAccount;
+			transactionTypeLbl.Text = transaction.transactionType;
+
+			if (transaction.transactionType == "Debit")
+            {
+				transactionTypeLbl.TextColor = UIColor.Red;
+            }
+
+        }
 	}
 }

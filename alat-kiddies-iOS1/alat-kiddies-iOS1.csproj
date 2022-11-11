@@ -306,6 +306,14 @@
         <Compile Include="TransactionTableCell.designer.cs">
           <DependentUpon>TransactionTableCell.cs</DependentUpon>
         </Compile>
+        <Compile Include="Kiddies\WardDashBoardScreen.cs" />
+        <Compile Include="Kiddies\WardDashBoardScreen.designer.cs">
+          <DependentUpon>WardDashBoardScreen.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Kiddies\WardTxHistoryScreen.cs" />
+        <Compile Include="Kiddies\WardTxHistoryScreen.designer.cs">
+          <DependentUpon>WardTxHistoryScreen.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

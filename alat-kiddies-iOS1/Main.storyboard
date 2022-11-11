@@ -214,6 +214,7 @@
                         <outlet property="showPasswordImg" destination="P4g-Kb-9nK" id="82T-zO-4TR"/>
                         <segue destination="z4T-J1-qFu" kind="show" identifier="GoToWardDashBoard" id="VPJ-yc-Y0M"/>
                         <segue destination="Dch-lH-djs" kind="show" identifier="GoToParentDashBoard" id="OJq-Lb-TfX"/>
+                        <segue destination="yzc-JG-yD2" kind="show" identifier="GoToKiddiesStoryboard" id="ahF-EC-ovP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfd-AM-EaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -492,7 +493,7 @@
                         <outlet property="nameLbl" destination="8c9-Ly-erV" id="Cso-Pj-uuj"/>
                         <outlet property="pageControl" destination="jYj-TL-9sr" id="XwQ-u6-ATJ"/>
                         <outlet property="sendMoneyImg" destination="j8J-eq-YvS" id="MPU-LL-QZl"/>
-                        <segue destination="7EN-tc-4hK" kind="show" id="TRo-qZ-eNl"/>
+                        <segue destination="7EN-tc-4hK" kind="show" identifier="goToCreateAccount" id="TRo-qZ-eNl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMZ-r2-IxF" sceneMemberID="firstResponder"/>
@@ -1107,6 +1108,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dem-yP-Qcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="370" y="1077"/>
+        </scene>
+        <!--WardDashBoardScreen-->
+        <scene sceneID="H5m-ya-1SI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KiddiesStoryboard" referencedIdentifier="WardDashBoardScreen" id="yzc-JG-yD2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D8H-h3-N1t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmp-tm-TFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="434"/>
         </scene>
     </scenes>
     <resources>

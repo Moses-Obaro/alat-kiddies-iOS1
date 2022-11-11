@@ -3,6 +3,7 @@
 using System;
 //using GlobalToast;
 using System.Drawing;
+using alat_kiddies_iOS1.Kiddies;
 using CoreAnimation;
 using CoreFoundation;
 using CoreGraphics;
@@ -19,6 +20,7 @@ namespace alat_kiddies_iOS1
         {
         }
 
+        UIStoryboard kiddiesStoryboard = UIStoryboard.FromName("KiddiesStoryboard", null);
         UIDynamicAnimator animator;
         UIDynamicItemBehavior spinnerBehaviour;
 
@@ -29,17 +31,11 @@ namespace alat_kiddies_iOS1
             FieldDesign();
             FieldIcons();
 
-            var defaultEmail = NSUserDefaults.StandardUserDefaults.StringForKey("Email");
-            if (defaultEmail != null)
-            {
-                emailField.Text = defaultEmail;
-            }
-
-            var defaultPassWord = NSUserDefaults.StandardUserDefaults.StringForKey("Password");
-            if (defaultPassWord != null)
-            {
-                passwordField.Text = defaultPassWord;
-            }           
+            //var defaultEmail = NSUserDefaults.StandardUserDefaults.StringForKey("Email");
+            //if (defaultEmail != null)
+            //{
+            //    emailField.Text = defaultEmail;
+            //}                       
 
             loginBtn.TouchUpInside += LoginBtn_TouchUpInside;
             var taprecognizer = new UITapGestureRecognizer(HidePassword);
@@ -52,11 +48,11 @@ namespace alat_kiddies_iOS1
 
         public override void ViewWillAppear(bool animated)
         {
-            base.ViewWillAppear(animated);
-            var defaultEmail = NSUserDefaults.StandardUserDefaults.StringForKey("Email");
-            if (defaultEmail != null)
+            base.ViewWillAppear(animated);           
+            var defaultPassWord = NSUserDefaults.StandardUserDefaults.StringForKey("Password");
+            if (defaultPassWord != null)
             {
-                emailField.Text = defaultEmail;
+                passwordField.Text = defaultPassWord;
             }
         }
 
@@ -111,28 +107,38 @@ namespace alat_kiddies_iOS1
 
         private void LoginBtn_TouchUpInside(object sender, EventArgs e)
         {
-            StartAmination();
-            try
-            {
-                bool emailInvalid = ValidationPack.ValidateEmail(emailField.Text);
-                bool passwordInvalid = ValidationPack.ValidatePassWord(passwordField.Text);
-                if (emailInvalid || passwordInvalid)
-                {
-                    StopAnimation();
-                    errorMsgLabel.Hidden = false;
-                    errorMsgLabel.Text = "Email or password incorrect. Try again";
-                }
-                else
-                {
-                    errorMsgLabel.Hidden = true;
-                    StopAnimation();
-                    PerformSegue("GoToParentDashBoard", null);
-                }
-            }
+            PerformSegue("GoToKiddiesStoryboard", null);
+            //StartAmination();
+            //try
+            //{
+            //    bool emailInvalid = ValidationPack.ValidateEmail(emailField.Text);
+            //    bool passwordInvalid = ValidationPack.ValidatePassWord(passwordField.Text);
+            //    if (emailInvalid || passwordInvalid)
+            //    {
+            //        StopAnimation();
+            //        errorMsgLabel.Hidden = false;
+            //        errorMsgLabel.Text = "Email or password incorrect. Try again";
+            //    }
+            //    else
+            //    {
+            //        errorMsgLabel.Hidden = true;
+            //        StopAnimation();
+            //        //PerformSegue("GoToParentDashBoard", null);
+                    
+            //    }
+            //}
 
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+        }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+            if (segue.Identifier == "GoToKiddiesStoryboard") {
+                var wardDashBoardVC = segue.DestinationViewController as WardDashBoardScreen;
             }
         }
 
